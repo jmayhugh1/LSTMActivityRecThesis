@@ -31,6 +31,8 @@ google_drive_path = '/Users/joshuamayhugh/Library/CloudStorage/GoogleDrive-jmayh
 
 # Iterate through files in the specified directory
 for filename in os.listdir(google_drive_path):
+    if 'SITTING' not in filename.upper() or "STANDING" not in filename.upper() or "EXIT" not in filename.upper():
+        continue
     if ".mp4" not in filename:
         continue
     video_path = os.path.join(google_drive_path, filename)
