@@ -37,9 +37,7 @@ if not os.path.exists(google_drive_path):
     sys.exit()
 
 for filename in os.listdir(google_drive_path):
-    if not (filename.upper().endswith('.MP4') and
-            ('SITTING' in filename.upper() or 'STANDING' in filename.upper() or
-             'EXIT' in filename.upper() or 'ENTRY' in filename.upper())):
+    if not (filename.upper().endswith('.MP4')):
         continue
     if filename in already_labeled:
         print(f"Points already labeled for {filename}.")
