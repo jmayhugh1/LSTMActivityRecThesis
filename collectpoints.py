@@ -29,7 +29,7 @@ def collect_points(Event, x, y, flags, params):
 
 
 
-google_drive_path = '/Users/joshuamayhugh/Library/CloudStorage/GoogleDrive-jmayhugh@tamu.edu/.shortcut-targets-by-id/1Wazg-sc1r3KWk6T95pnbHeH8eMssRnr8/Research Idea 4 (Deep Learning Classification)/Group 1 : Video Activity Recognition (Arthur,Josh)/Organized Data'
+google_drive_path = 'path'
 ## get the google drive nad open the folder and go through the m4p files
 for filename in os.listdir(google_drive_path):
     video_path = os.path.join(google_drive_path, filename)
